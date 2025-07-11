@@ -67,12 +67,12 @@ export default function LoginPage() {
 
   return (
     <>
-      <div className="w-full h-screen bg-[url(/login-bg.jpg)] bg-cover bg-center flex">
-        <div className="w-[50%] h-full border-[1px]"></div>
-        <div className="w-[50%] h-full border-[1px] flex justify-center items-center">
-          <div className="w-[550px] h-[600px] backdrop-blur-xl shadow-xl rounded-b-xl flex flex-col justify-center items-center">
+      <div className="min-h-screen bg-[url(/login-bg.jpg)] bg-cover bg-center flex flx-col lg:flex-row justify-center items-center">
+
+        <div className="w-full lg:w-1/2 h-full flex justify-center items-center p-4">
+          <div className="w-full  h-[600px] lg:w-[660px] lg:h-[600px] backdrop-blur-xl shadow-xl rounded-b-xl flex flex-col justify-center items-center">
             <input
-              className="w-[400px] h-[50px] border border-white rounded-xl text-center m-[4px]"
+              className="w-full h-12 lg:w-[450px] border border-white rounded-xl text-center m-[4px] lg:m-[10px]"
               type="email"
               placeholder="email"
               onChange={(e) => {
@@ -80,7 +80,7 @@ export default function LoginPage() {
               }}
             ></input>
             <input
-              className="w-[400px] h-[50px] border border-white rounded-xl text-center m-[6px]"
+              className="w-full h-12 lg:w-[450px] border border-white rounded-xl text-center m-[6px] lg:m-[10px]"
               type="password"
               placeholder="password"
               onChange={(e) => {
@@ -88,13 +88,13 @@ export default function LoginPage() {
               }}
             ></input>
             <button
-              className="w-[400px] h-[50px] border border-white bg-green-500 rounded-xl text-center text-white cursor-pointer"
+              className="w-full h-12 lg:w-[450px] border border-white bg-green-500 rounded-xl text-center text-white cursor-pointer lg:m-[10px] m-[4px]"
               onClick={handleLogin}
             >
               Login
             </button>
             <button
-              className="w-[400px] h-[50px] border border-white bg-green-500 rounded-xl text-center text-white cursor-pointer flex justify-center items-center m-[10px]"
+              className="w-full h-12 lg:w-[450px] border border-white bg-green-500 rounded-xl text-center text-white cursor-pointer flex justify-center items-center lg:m-[12px] m-[10px]"
               onClick={loginWithGoogle}
             >
               <RiGoogleFill className="mr-[10px]" />
