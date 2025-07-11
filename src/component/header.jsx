@@ -16,7 +16,7 @@ export default function Header() {
           <Link to="/">Home</Link>
           <Link to="/products">Product</Link>
           <Link to="/contact-us">Contact Us</Link>
-          <Link to="/overview">Overview</Link>
+          <Link to="/about-us">About Us</Link>
           <Link to="/cart" className="absolute right-[30px] text-3xl">
             <ShoppingCart />
           </Link>
@@ -30,7 +30,7 @@ export default function Header() {
               <Link to="/">Home</Link>
               <Link to="/products">Product</Link>
               <Link to="/contact-us">Contact Us</Link>
-              <Link to="/overview">Overview</Link>
+              <Link to="/about-us">About Us</Link>
               <Link to="/cart" className="absolute right-[30px] text-3xl">
                 <ShoppingCart />
               </Link>
