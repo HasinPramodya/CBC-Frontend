@@ -90,7 +90,7 @@ export default function ProductOverview() {
                   className="bg-pink-800 text-white w-[200px] h-[50px] rounded-lg hover:bg-white hover:text-pink-800 border border-pink-800 cursor-pointer m-2"
                   onClick={() => {
                     addToCart(product, 1);
-                    toast.success("Product Succcessfuly add to cart");
+                    toast.success("Product Successfully add to cart");
                   }}
                 >
                   Add to Cart
