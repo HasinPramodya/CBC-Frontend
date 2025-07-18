@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-
+import UserData from "./userData";
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
 
@@ -20,6 +20,9 @@ export default function Header() {
           <Link to="/cart" className="absolute right-[30px] text-3xl">
             <ShoppingCart />
           </Link>
+          <div className="absolute right-[20px] h-full flex">
+            <UserData />
+          </div>
         </div>
         {isOpen && (
           <div className="fixed lg:hidden z-[9999] top-0 left-0 bg-[#00000060] w-full h-screen flex">
