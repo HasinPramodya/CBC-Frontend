@@ -8,14 +8,15 @@ import toast from "react-hot-toast";
 
 export default function ProductOverview() {
   const params = useParams();
+  if (params.id == null) {
+    window.location.href = "/products";
+  }
   const navigate = useNavigate();
 
   const [product, setProduct] = useState(null);
   const [status, setStatus] = useState("Loading"); //loading,loaded,error
 
-  if (params.id == null) {
-    window.location.href = "/products";
-  }
+
 
   useEffect(() => {
     if (status == "Loading") {
@@ -27,6 +28,7 @@ export default function ProductOverview() {
         })
         .then((res) => {
           setProduct(res.data.product);
+          console.log(res.data.product);
           setStatus("loaded");
         })
         .catch((error) => {
