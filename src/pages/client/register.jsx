@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
@@ -10,6 +10,7 @@ export default function RegisterPage() {
   const [role, setRole] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
+  const navigate = useNavigate()
 
   function handleRegister() {
     axios.post(import.meta.env.VITE_BACKEND_URL +"/api/user/", {
@@ -22,6 +23,7 @@ export default function RegisterPage() {
     }).then((res)=>{
       console.log(res.data)
       toast.success("Successfully register");
+      navigate("/login")
     }
 
     ).catch((error)=>{
