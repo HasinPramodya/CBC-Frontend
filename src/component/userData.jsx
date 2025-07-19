@@ -34,11 +34,11 @@ export default function UserData(){
         <>
             {
                 (user==null) ?
-                    <div className="h-full flex justify-center items-center flex-row">
+                    <div className="h-full flex justify-center items-center flex-col lg:flex-row">
                         <Link to="/login" className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Login</Link>
                         <Link to="/register" className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 ml-4">Register</Link>
                     </div> :
-                    <div className="h-full flex justify-center items-center flex-row">
+                    <div className="h-full flex justify-center items-center flex-col flex-row">
 
                         <button to="/logout" className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" onClick={()=>{
                             localStorage.removeItem("token");
