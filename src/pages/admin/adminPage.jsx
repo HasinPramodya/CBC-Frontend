@@ -2,6 +2,7 @@ import { Link,Route,Routes, useNavigate } from "react-router-dom";
 import { FaUsers } from "react-icons/fa";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import { FaBorderAll } from "react-icons/fa";
+import { SlLogout } from "react-icons/sl";
 import AdminProduct from "./adminProductPage";
 import AddProduct from "./adminAddProductPage";
 import EditForm from "./adminEditProductPage";
@@ -11,6 +12,7 @@ import Loader from "../../component/loader";
 import toast from "react-hot-toast";
 import axios from "axios";
 import AdminUserPage from "./adminUserPage";
+import UserData from "../../component/userData.jsx";
 
 
 
@@ -62,6 +64,7 @@ export default function AdminPage(){
                 <Link to = "/admin/products" className="block w-full h-[50px] bg-blue-500 text-white rounded-xl text-center p-2 m-2 flex justify-center items-center"><MdOutlineProductionQuantityLimits className="mr-2" />Products</Link>
                 <Link to = "/admin/orders" className="block w-full h-[50px] bg-blue-500 text-white rounded-xl text-center p-2 m-2 flex justify-center items-center"><FaBorderAll className="mr-2"/>Orders</Link>
                 <Link to = "/admin/addProduct" className="block w-full h-[50px] bg-blue-500 text-white rounded-xl text-center p-2 m-2 flex justify-center items-center" ><FaBorderAll className="mr-2"/>Add product</Link>
+                <Link to = "/login" className="block w-full h-[50px] bg-blue-500 text-white rounded-xl text-center p-2 m-2 flex justify-center items-center" ><SlLogout className="mr-2"/>Sign out</Link>
 
             </div>
             <div className="w-[calc(100vw-300px)] h-full bg-white rounded-lg">
@@ -71,6 +74,7 @@ export default function AdminPage(){
                     <Route path='/orders' element={<AdminOrderPage/>}></Route>
                     <Route path="/addProduct" element={<AddProduct/>}></Route>
                     <Route path="/editProduct" element={<EditForm/>}></Route>
+                    <Route path="/login" element={<UserData/>}></Route>
                 </Routes>
             </div>
         </div> :
