@@ -6,14 +6,16 @@ import CheckoutPage from "./client/checkout";
 import ContactUsPage from "./client/contactUs.jsx";
 import AboutUsPage from "./client/aboutUsPage.jsx";
 import LandingPage from "./client/landingPage.jsx";
+import NotFound from "../component/notFound.jsx";
+import Footer from "../component/footer.jsx";
 
 
 export default function HomePage(){
     return(
         <>
-          <div className="w-full h-screen max-h-screen">
+          <div className="min-h-screen flex flex-col">
              <Header/>
-             <div className="w-full h-[calc(100vh-75px)] min-h-[calc(100vh-75px)]">
+             <div className="flex-1">
               <Routes>
                  <Route path="/" element={<LandingPage/>}></Route>
                  <Route path="/products" element={<ProductPage/>}></Route>
@@ -21,9 +23,10 @@ export default function HomePage(){
                  <Route path="/checkout" element={<CheckoutPage/>}></Route>
                   <Route path="/contact-us" element={<ContactUsPage/>}></Route>
                   <Route path="/about-us" element={<AboutUsPage/>}></Route>
-                 <Route path="/*" element={<h1>404 Not Found</h1>}></Route>
+                 <Route path="/*" element={<NotFound/>}></Route>
               </Routes>
              </div>
+              <Footer/>
           </div>
         </>
     )
