@@ -1,4 +1,7 @@
+import {useNavigate} from "react-router-dom";
+
 export default function NotFound() {
+    const navigate = useNavigate()
     return(
         <>
             <div className="flex  flex-col justify-center items-center h-full">
@@ -7,7 +10,9 @@ export default function NotFound() {
                 <div>
                     <img src="/public/not found.jpg" alt="404 Not Found" className="w-[375px] h-[275px] object-cover" />
                 </div>
-                <button className="flex items-center justify-between gap-2 bg-pink-800 text-white w-[200px] h-[50px] px-4 rounded-lg hover:bg-white hover:text-pink-800 border border-pink-800 cursor-pointer m-4">
+                <button className="flex items-center justify-between gap-2 bg-pink-800 text-white w-[200px] h-[50px] px-4 rounded-lg hover:bg-white hover:text-pink-800 border border-pink-800 cursor-pointer m-4" onClick={()=>{
+                    navigate('/login')
+                }}>
                     Back to Home page
                 </button>
             </div>
