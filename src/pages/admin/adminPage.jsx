@@ -13,6 +13,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import AdminUserPage from "./adminUserPage";
 import UserData from "../../component/userData.jsx";
+import NotFound from "../../component/notFound.jsx";
 
 
 
@@ -25,8 +26,8 @@ export default function AdminPage(){
         const token = localStorage.getItem("token");
 
         if(token == null){
-            toast.error("You are not logged in, please Login as Admin")
-            navigate('/login')
+
+            navigate("/page-not-found")
             
         }else{
             axios.get(import.meta.env.VITE_BACKEND_URL + "/api/user/current",{
@@ -38,8 +39,9 @@ export default function AdminPage(){
                  if(res.data.user.userType == "admin"){
                     setUserValidated(true)
                  }else{
-                    toast.error("please login as an Admin");
-                    navigate("/login")
+
+                     navigate("/page-not-found")
+
                  }
                }
             ).catch(
