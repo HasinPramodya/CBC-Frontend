@@ -1,6 +1,5 @@
-import { FaFacebookF } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaTwitter} from "react-icons/fa";
+import {AiFillInstagram} from "react-icons/ai";
 import { FiMapPin } from "react-icons/fi";
 import { CiPhone, CiMail } from "react-icons/ci";
 import { Link } from "react-router-dom";
