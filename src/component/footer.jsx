@@ -3,6 +3,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { CiPhone, CiMail } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -36,24 +37,24 @@ export default function Footer() {
                         <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
                         <ul className="space-y-2 text-gray-300 text-sm">
                             <li>
-                                <a href="#" className="hover:text-pink-400 transition-colors">
+                                <Link to="/" className="hover:text-pink-400 transition-colors">
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-pink-400 transition-colors">
+                                <Link to="/products" className="hover:text-pink-400 transition-colors">
                                     Products
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-pink-400 transition-colors">
+                                <Link to="/about-us" className="hover:text-pink-400 transition-colors">
                                     About Us
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-pink-400 transition-colors">
+                                <Link to="/contact-us" className="hover:text-pink-400 transition-colors">
                                     Contact Us
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
