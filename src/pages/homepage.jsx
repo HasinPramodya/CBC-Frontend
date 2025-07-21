@@ -1,8 +1,8 @@
-import { Route, Routes } from "react-router-dom";
-import Header from "../component/header";
-import ProductPage from "./client/poductPage";
-import ProductOverview from "./client/productOverview";
-import CheckoutPage from "./client/checkout";
+import { Route, Routes } from "react-router-dom.jsx";
+import Header from "../component/header.jsx";
+import ProductPage from "./client/poductPage.jsx";
+import ProductOverview from "./client/productOverview.jsx";
+import CheckoutPage from "./client/checkout.jsx";
 import ContactUsPage from "./client/contactUs.jsx";
 import AboutUsPage from "./client/aboutUsPage.jsx";
 import LandingPage from "./client/landingPage.jsx";
