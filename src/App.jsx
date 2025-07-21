@@ -9,6 +9,7 @@ import { Toaster } from 'react-hot-toast'
 import CartPage from './pages/client/cart'
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import ForgetPasswordPage from "./pages/client/forgetPassword.jsx";
+import OrdersPage from "./pages/client/ordersPage.jsx";
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
          <Route path='/*' element={<HomePage/>}></Route>
          <Route path='/cart' element={<CartPage/>}></Route>
            <Route path='/forget'element={<ForgetPasswordPage/>}></Route>
+           <Route path='/orders'element={<OrdersPage/>}></Route>
        </Routes>
      </BrowserRouter>
      </GoogleOAuthProvider>
