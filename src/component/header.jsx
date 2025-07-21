@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
+import { ShoppingBag } from 'lucide-react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import UserData from "./userData";
@@ -17,10 +18,13 @@ export default function Header() {
           <Link to="/products">Product</Link>
           <Link to="/contact-us">Contact Us</Link>
           <Link to="/about-us">About Us</Link>
-          <Link to="/cart" className="absolute right-[30px] text-3xl">
+          <Link to="/cart" className="absolute right-[40px] text-3xl">
             <ShoppingCart />
           </Link>
-          <div className="absolute right-[70px] h-full flex">
+          <Link to="/orders" className="text-3xl absolute right-[10px]">
+            <ShoppingBag />
+          </Link>
+          <div className="absolute right-[80px] h-full flex">
             <UserData />
           </div>
         </div>
@@ -36,6 +40,9 @@ export default function Header() {
               <Link to="/about-us">About Us</Link>
               <Link to="/cart" className="text-3xl mb-2">
                 <ShoppingCart />
+              </Link>
+              <Link className="text-3xl absolute right-[10px]">
+                <ShoppingBag />
               </Link>
               <div>
                 <UserData />
