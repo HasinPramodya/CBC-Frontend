@@ -89,8 +89,14 @@ export default function CartPage() {
             }}>
                  Checkout
             </button>
-                  
           </div>
+            <div className="flex justify-center items-center w-full h-[100px] mt-[250px]">
+                <button className="flex items-center justify-between gap-2 bg-pink-800 text-white w-[200px] h-[50px] px-4 rounded-lg hover:bg-white hover:text-pink-800 border border-pink-800 cursor-pointer m-4" onClick={()=>{
+                    navigate('/products')
+                }}>
+                    Back to Products
+                </button>
+            </div>
         </div>
       </div>
     </>
