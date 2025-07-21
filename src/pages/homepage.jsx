@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "../component/header.jsx";
-import ProductPage from "./client/poductPage.jsx";
+import ProductPage from "./client/productPage.jsx";
 import ProductOverview from "./client/productOverview.jsx";
 import CheckoutPage from "./client/checkout.jsx";
 import ContactUsPage from "./client/contactUs.jsx";
