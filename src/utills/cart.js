@@ -53,6 +53,11 @@ export function removeFromCart(productId) {
   return cart;
 }
 
+export function clearCart() {
+  localStorage.setItem("cart", JSON.stringify([]));
+  return cart;
+}
+
 export function getTotal() {
   let cart = getCart();
   let total = 0;
