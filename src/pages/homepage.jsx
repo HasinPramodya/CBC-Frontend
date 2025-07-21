@@ -3,11 +3,11 @@ import Header from "../component/header.jsx";
 import ProductPage from "./client/productPage.jsx";
 import ProductOverview from "./client/productOverview.jsx";
 import CheckoutPage from "./client/checkout.jsx";
-import ContactUsPage from "./client/contactUs.jsx";
 import AboutUsPage from "./client/aboutUsPage.jsx";
 import LandingPage from "./client/landingPage.jsx";
 import NotFound from "../component/notFound.jsx";
 import Footer from "../component/footer.jsx";
+import ContactUsPage from "./client/contactUs.jsx";
 
 
 export default function HomePage(){
