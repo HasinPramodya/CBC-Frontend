@@ -1,7 +1,6 @@
 import { Link,Route,Routes, useNavigate } from "react-router-dom";
-import { FaUsers } from "react-icons/fa";
-import { MdOutlineProductionQuantityLimits } from "react-icons/md";
-import { FaBorderAll } from "react-icons/fa";
+import { FaUsers, FaBorderAll} from "react-icons/fa";
+import {MdOutlineProductionQuantityLimits} from "react-icons/md";
 import { SlLogout } from "react-icons/sl";
 import AdminProduct from "./adminProductPage";
 import AddProduct from "./adminAddProductPage";
@@ -13,7 +12,6 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import AdminUserPage from "./adminUserPage";
 import UserData from "../../component/userData.jsx";
-import NotFound from "../../component/notFound.jsx";
 
 
 
