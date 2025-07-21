@@ -3,7 +3,7 @@ import Header from "../component/header.jsx";
 import ProductPage from "./client/poductPage.jsx";
 import ProductOverview from "./client/productOverview.jsx";
 import CheckoutPage from "./client/checkout.jsx";
-import ContactUsPage from "./client/contactUs.jsx";
+import ContactUs from "./contactUs.jsx";
 import AboutUsPage from "./client/aboutUsPage.jsx";
 import LandingPage from "./client/landingPage.jsx";
 import NotFound from "../component/notFound.jsx";
