@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { CircleX } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function OrdersPage() {
     const [orders, setOrders] = useState([]);
     const [isOrdersLoaded, setIsOrdersLoaded] = useState(false);
     const [isModelDisplayed, setIsModelDisplayed] = useState(false);
     const [displayingOrder, setDispalyingOrder] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (!isOrdersLoaded) {
@@ -128,7 +130,16 @@ export default function OrdersPage() {
                         </div>
                     </div>
                 )}
+                <div className="flex justify-center items-center w-full h-[100px]">
+                    <button className="flex items-center justify-between gap-2 bg-pink-800 text-white w-[200px] h-[50px] px-4 rounded-lg hover:bg-white hover:text-pink-800 border border-pink-800 cursor-pointer m-4" onClick={()=>{
+                        navigate('/')
+                    }}>
+                        Back to Home page
+                    </button>
+                </div>
             </div>
+
+
         </>
     );
 }
