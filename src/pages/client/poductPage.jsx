@@ -11,11 +11,9 @@ export default function ProductPage() {
     useEffect(() => {
         if (!productsLoaded) {
             axios
-                .get(import.meta.env.VITE_BACKEND_URL + "/api/product/products", {
-                    headers: {
-                        Authorization: `Bearer ${localStorage.getItem("token")}`,
-                    },
-                })
+                .get(import.meta.env.VITE_BACKEND_URL + "/api/product/products"
+
+                )
                 .then((res) => {
                     setProductList(res.data.products);
                     setProductsLoaded(true);
