@@ -1,4 +1,3 @@
-import './App.css'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import AdminPage from './pages/admin/adminPage'
 import LoginPage from './pages/loginPage'
