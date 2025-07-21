@@ -5,9 +5,9 @@ import Slider from "react-slick";
 export default function HomeSlider() {
 
        const images = [
-           "./public/home-slider-1.jpg",
-           "./public/home-slider-2.jpg",
-           "./public/home-slider-3.jpg",
+           "/home-slider-1.jpg",
+           "/home-slider-2.jpg",
+           "/home-slider-3.jpg",
         ];
 
         const settings = {
