@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom.jsx";
+import { Route, Routes } from "react-router-dom";
 import Header from "../component/header.jsx";
 import ProductPage from "./client/poductPage.jsx";
 import ProductOverview from "./client/productOverview.jsx";
