@@ -3,6 +3,7 @@ import { Trash2 } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import {clearCart} from "../../utills/cart.js";
 
 export default function CheckoutPage() {
   const location = useLocation();
@@ -198,7 +199,11 @@ export default function CheckoutPage() {
           <div className="w-full flex justify-end mt-4">
             <button
               className="w-[170px] text-xl text-center shadow pr-2 bg-pink-400 text-white h-[40px] rounded-xl cursor-pointer"
-              onClick={placeOrder}
+              onClick={() => {
+                placeOrder();
+                clearCart();
+              }}
+
             >
               Place Order
             </button>
